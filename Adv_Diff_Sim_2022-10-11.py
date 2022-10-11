@@ -10,13 +10,14 @@ Start = time.time()
 ForcePerKinesin, ForcePerMyosin, kBT, FilamentLen = 6, 3, 4, 5  # pN/fil / pN/fil / pN*nm / um
 GammaFilMT, GammaFilAct = 0.01, 0.005  # pN*ms/nm / pN*ms/nm
 GammaMotKin, GammaMotMyo = 6, 0.3  # (pN*ms/nm)/fil / (pN*ms/nm)/fil
+BaseGridDist, ResFac = 5, 2  # um / -
 
 # Inputs
 CaseNum, CaseIteration = 'x_', 'x_'
-KinesinPerMT, MyosinPerActin = 0, 0  # - / - / - -- (5 / 10)
-GammaCrosslinkMT, GammaCrosslinkActin = 0, 0  # (pN*ms/nm)/fil / (pN*ms/nm)/fil -- (10 / 10)
-BaseColumns, BaseRows, BaseGridDist, ResFac, NumAnn = 29, 34, 5, 2, 6  # - / - / um / - / -
+KinesinPerMT, MyosinPerActin = 0, 0  # - / -
+GammaCrosslinkMT, GammaCrosslinkActin = 0, 0  # (pN*ms/nm)/fil / (pN*ms/nm)/fil
 RatioMT, RatioActin, NumIterations, TimeStep = 0.15, 0.40, 1000000, 100  # - / - / - / ms
+BaseColumns, BaseRows, NumAnn = 29, 34, 6  # - / - / -
 
 # Define hexagonal coordinate system -- NumRows must be even to satisfy boundary conditions
 NumColumns, NumRows, GridDist = BaseColumns * ResFac, BaseRows * ResFac, BaseGridDist / ResFac
