@@ -13,4 +13,4 @@ Inputs:
 # Adv_Diff_Plot_2022-10-11
 This file plots the results.
 Inputs:
- - Line 9: Case ID and Iteration IDs
+ - Line 9: Case ID and Iteration ID(s)
