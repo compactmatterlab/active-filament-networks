@@ -21,8 +21,15 @@ Inputs:
 - Line 18: Volume fraction of microtubules, volume fraction of actin filaments, number of columns, and number of rows
 - Line 19: Number of iterations and timestep per iteration (in ms)
 
-# Adv_Diff_Analysis_2022-12-09
-This file performs spatial analysis and plots the results.
+# Plot_Multiple
+This file performs spatial analysis and plotting for three sets of simulation results.
+Inputs:
+- Line 9: Case ID
+- Line 10: Iteration IDs
+- Line 11: Number of annuli (for spatial distribution analysis)
+
+# Plot_Single
+This file performs spatial analysis and plotting for a single set of simulation results.
 Inputs:
 - Line 8: Case ID, iteration ID, and case description
 - Line 9: Number of annuli (for spatial distribution analysis)
