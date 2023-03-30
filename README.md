@@ -3,7 +3,7 @@ Computational Models to Simulate Active Filament Networks
 
 # Adv_Diff_Model
 This file runs the simulation with the advection diffusion model.
-Inputs:
+The inputs are:
 - Line 17: Case ID and iteration ID (these are strings used for saving and loading data)
 - Line 18: Number of kinesin motors per microtubule and number of myosin motors per actin filament
 - Line 19: Gamma_crosslink for microtubules (in (pN * ms / nm) / fil) and gamma_crosslink for actin filaments (in (pN * ms / nm) / fil)
@@ -13,7 +13,7 @@ Inputs:
 
 # Energy_Work_Model
 This file runs the simulation with the energy work balance model.
-Inputs:
+The inputs are:
 - Line 14: Case ID and iteration ID (these are strings used for saving and loading data)
 - Line 15: Number of kinesin motors per microtubule and number of myosin motors per actin filament
 - Line 16: Crosslink bond energy per microtubule bond (in kB * T) and crosslink bond energy per actin filament bond (in kB * T)
@@ -23,13 +23,13 @@ Inputs:
 
 # Plot_Multiple
 This file performs spatial analysis and plotting for three sets of simulation results.
-Inputs:
+The inputs are:
 - Line 9: Case ID
 - Line 10: Iteration IDs
 - Line 11: Number of annuli (for spatial distribution analysis)
 
 # Plot_Single
 This file performs spatial analysis and plotting for a single set of simulation results.
-Inputs:
+The inputs are:
 - Line 8: Case ID, iteration ID, and case description
 - Line 9: Number of annuli (for spatial distribution analysis)
