@@ -24,6 +24,9 @@ Line 19:
 
 Plot_Single_V3: This file performs spatial analysis and plotting for a single set of simulation results. It loads the files saved from the model. The inputs are:
 
-Line 8: Case ID: This must match the value from the model.
-Line 9: Iteration ID: This must match the value from the model.
-Line 9: Number of annuli (for spatial distribution analysis): Each annulus is 2.5 um in diameter. It is suggested to start with a value of 20 annuli.
+Line 8:
+- Case ID: This string must match the value from the model.
+Line 9:
+- Iteration ID: This string must match the value from the model.
+Line 10:
+- Number of annuli (for spatial distribution analysis): Each annulus is 2.5 um in diameter. It is suggested to start with a value of 20 annuli.
