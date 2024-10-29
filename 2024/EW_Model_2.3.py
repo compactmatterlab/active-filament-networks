@@ -12,7 +12,7 @@ GamFilMT, GamFilAct, GamMotKin, GamMotMyo = 0.04e-3, 0.02e-3, 6e-3, 0.3e-3  # pN
 BaseGridDist, ResFac = 5, 4  # um, -
 
 # Material Inputs
-CaseNum, CaseIter = 'K1_', '65_5_'
+CaseNum, CaseIter = 'K1', '65_5'
 AvgKinPerMT, KinRatAct, MyoPerAct = 1, 0.65, 0  # -, -, -
 GammaCLMT, GammaCLAct = 0, 0  # pN*s/nm/fil, pN*s/nm/fil
 RatioMT, RatioAct, BaseColumns, BaseRows = 0.30, 0.25, 20, 23  # -, -, -, -
@@ -20,7 +20,7 @@ TotalTime = 5  # min
 
 # Save input parameters
 InputList = [RatioMT, RatioAct, BaseColumns, BaseRows, BaseGridDist, ResFac, TotalTime]
-np.save(CaseNum + CaseIter + 'Input_Param', InputList)
+np.save(CaseNum + '_' + CaseIter + '_' + 'Input_Param', InputList)
 
 # Define hexagonal coordinate system -- NumRows must be even to satisfy boundary conditions
 NumCols, NumRows, GridDist = BaseColumns * ResFac, BaseRows * ResFac, BaseGridDist / ResFac
@@ -150,7 +150,8 @@ for i in range(TotPts):
         LineSegIn[i] = [(EptIn[i, 0], EptIn[i, 1]), (EptIn[i, 2], EptIn[i, 3])]
 
 # Save initial conditions
-np.save(CaseNum + CaseIter + 'State_Ini', State), np.save(CaseNum + CaseIter + 'LineSeg_Ini', LineSegIn)
+np.save(CaseNum + '_' + CaseIter + '_' + 'State_Ini', State)
+np.save(CaseNum + '_' + CaseIter + '_' + 'LineSeg_Ini', LineSegIn)
 
 # Define force angle matrices
 FAng1, TrackerFA1 = np.zeros((TotPts, TotPts)), np.zeros((TotPts, NumNB1), dtype=int)
@@ -654,7 +655,8 @@ for i in range(TotPts):
             LineSeg[i] = [(Ept[i, 0], Ept[i, 1]), (Ept[i, 2], Ept[i, 3])]
 
 # Save post-simulation conditions
-np.save(CaseNum + CaseIter + 'State_Fin', State), np.save(CaseNum + CaseIter + 'LineSeg_Fin', LineSeg)
+np.save(CaseNum + '_' + CaseIter + '_' + 'State_Fin', State)
+np.save(CaseNum + '_' + CaseIter + '_' + 'LineSeg_Fin', LineSeg)
 
 End = time.time()
 print(round((End - Start) / 60), "minutes")
