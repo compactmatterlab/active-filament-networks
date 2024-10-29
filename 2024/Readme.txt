@@ -1,7 +1,7 @@
 Computational Model to Simulate Active Filament Network
 
 
-EW_Model_2.3: This file runs the simulation. The inputs are:
+EW_Model_2.4: This file runs the simulation. The inputs are:
 
 Line 15:
 - Case ID and iteration ID: These are strings used for saving and loading data.
@@ -9,7 +9,7 @@ Line 15:
 Line 16:
 - Average number of kinesin motors per microtubule-microtubule interaction: It is suggested to use a value somewhere in the range of 0.1 - 1. This is the average value, and the actual value for each MT-MT interaction will be selected randomly from a poisson distribution. Note that each MT has the potential to interact with other MT's that are up to 4 grid locations away.
 - Percentage of kinesin motors that are active: This value must be between 0 and 1 (decimal percentage). Active motors exert forces on microtubules, while passive motors crosslink microtubules together.
-- Number of myosin motors per actin-actin interaction: It is suggested to use a value in the range of 0.1 - 10. Note that each actin filament has the potential to interact with other actin filaments that are up to 4 grid locations away.
+- Average number of myosin motors per actin-actin interaction: It is suggested to use a value somewhere in the range of 0.1 - 10. This is the average value, and the actual value for each actin-actin interaction will be selected randomly from a poisson distribution. Note that each actin filament has the potential to interact with other actin filaments that are up to 4 grid locations away.
 
 Line 17:
 - Gamma_crosslink for microtubules and gamma_crosslink for actin filaments: These parameters represent crosslinking proteins. The value is applied to each MT-MT or actin-actin interaction. Note that each filament has the potential to interact with other filaments that are up to 4 grid locations away. This parameter is sensitive to the quantities of kinesin and myosin motors in the system. It is suggested to start somewhere in the range of 1 - 100 pN*s/nm/fil.
