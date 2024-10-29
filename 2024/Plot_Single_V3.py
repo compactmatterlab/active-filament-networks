@@ -285,8 +285,8 @@ for i in range(TotalPts):
         MTLinesIni.append(LineSegIni[i])
     elif StateIni[i] == 2:
         ActLinesIni.append(LineSegIni[i])
-MTLineCollIni = collections.LineCollection(MTLinesIni, color="red", linewidth=1.2, zorder=2)
-ActLineCollIni = collections.LineCollection(ActLinesIni, color="green", linewidth=1.2, zorder=1)
+MTLineCollIni = collections.LineCollection(MTLinesIni, color="red", linewidth=1.2, alpha=0.5, zorder=2)
+ActLineCollIni = collections.LineCollection(ActLinesIni, color="green", linewidth=1.2, alpha=0.5, zorder=1)
 ax1.add_collection(MTLineCollIni), ax1.add_collection(ActLineCollIni)
 
 # Condition after simulation
