@@ -29,4 +29,4 @@ Line 8:
 Line 9:
 - Iteration ID: This string must match the value from the model.
 Line 10:
-- Number of annuli: This defines the number of concentric rings (annuli) that will be used for the spatial analysis. The spatial analysis determines, for each filament, how many same-type and other-type filaments are located in each of the annuli around each filament and averages this data across the entire simulation space. Each annulus is 2.5 um in diameter. It is suggested to start with a value of 20 annuli.
+- Number of annuli: This defines the number of concentric rings (annuli) that will be used for the spatial analysis. The spatial analysis determines, for each filament, how many same-type and other-type filaments are located in each of the annuli around each filament and averages this data across the entire simulation space. It is suggested to start with a value of 20 annuli.
