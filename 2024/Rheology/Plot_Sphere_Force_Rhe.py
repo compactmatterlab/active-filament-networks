@@ -2,7 +2,6 @@
 import numpy as np
 import math
 import matplotlib.pyplot as plot
-import matplotlib.collections as collections
 
 # Inputs
 Case = 'SPH-K1-025'
